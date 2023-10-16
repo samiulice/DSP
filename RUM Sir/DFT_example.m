@@ -2,7 +2,7 @@
 clc;
 clear all;
 close all;
-N = 8;
+N = 8;                 %DFT Points
 Fs = 8*1e3;         % Sampling frequency 8KHz
 Ts = 1/Fs;
 t = 0:N-1;
@@ -49,6 +49,6 @@ ylabel('Magnitude')
 figure(5)
 stem(t,X_ang,'b','LineWidth',2)
 grid on;
-title('Phase angle in Degrees')
+title('Phase angle in Degree')
 xlabel('Frequency(KHz)')
 ylabel('Degree')
